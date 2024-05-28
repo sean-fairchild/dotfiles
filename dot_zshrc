@@ -220,3 +220,4 @@ eval "$(mise activate zsh)"
 eval "$(mise completion zsh)"
 eval "$(chezmoi completion zsh)"
 source <(fzf --zsh)
+complete -C '$(which aws_completer)' aws
