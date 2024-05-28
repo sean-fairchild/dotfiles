@@ -1,0 +1,37 @@
+[user]
+	signingkey = E3F431C86B614EB9
+	email = s3ff@pge.com
+	name = Sean Fairchild
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
+[core]
+	pager = less
+[merge]
+  tool = vimdiff
+[mergetool]
+  prompt = true
+[mergetool "vimdiff"]
+  cmd = nvim -d $LOCAL $REMOTE $MERGED
+[difftool]
+  prompt = false
+[diff]
+	tool = difft
+	external = difft
+[pull]
+	ff = only
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/local/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/local/bin/gh auth git-credential
+[http]
+	sslVerify = false
+[init]
+	defaultBranch = main
+[alias]
+	d = difftool
