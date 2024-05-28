@@ -1,5 +1,5 @@
 {{- $email := promptStringOnce . "email" "Email address" -}}
-{{- $full_name := promptStringOnce . "Full Name" "Full Name to use in gitconfig" -}}
+{{- $full_name := promptStringOnce . "full_name" "Full Name to use in gitconfig" -}}
 
 [data]
     email = {{ $email | quote }}
@@ -11,5 +11,5 @@
 
 [merge]
     command = "nvim"
-    args = ["-d", "{{ "{{" }} .Destination {{ "{{" }}", "{{ "{{" }} .Source {{ "}}" }}", "{{ "{{" }} .Target {{ "}}" }}"]
+    args = ["-d", "{{ "{{" }} .Destination {{ "}}" }}", "{{ "{{" }} .Source {{ "}}" }}", "{{ "{{" }} .Target {{ "}}" }}"]
 
