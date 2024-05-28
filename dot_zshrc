@@ -219,3 +219,4 @@ export PATH="$HOME/.local/share/mise/shims:$PATH"
 eval "$(mise activate zsh)"
 eval "$(mise completion zsh)"
 eval "$(chezmoi completion zsh)"
+source <(fzf --zsh)

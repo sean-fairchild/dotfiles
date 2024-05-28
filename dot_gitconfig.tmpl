@@ -1,7 +1,7 @@
 [user]
 	signingkey = E3F431C86B614EB9
-	email = s3ff@pge.com
-	name = Sean Fairchild
+	email = {{.email}}
+	name = {{.full_name}}
 [commit]
 	gpgsign = true
 [gpg]
@@ -24,10 +24,8 @@
 [url "git@github.com:"]
 	insteadOf = https://github.com/
 [credential "https://github.com"]
-	helper = 
 	helper = !/usr/local/bin/gh auth git-credential
 [credential "https://gist.github.com"]
-	helper = 
 	helper = !/usr/local/bin/gh auth git-credential
 [http]
 	sslVerify = false

@@ -1,0 +1,6 @@
+{{- $email := promptStringOnce . "email" "Email address" -}}
+{{- $full_name := promptStringOnce . "Full Name" "Full Name to use in gitconfig" -}}
+
+[data]
+    email = {{ $email | quote }}
+    full_name = {{ $full_name | quote }}
