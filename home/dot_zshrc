@@ -86,11 +86,12 @@ plugins=(
   fzf
   git
   kubectl
+  mise
   rust
   terraform
   vi-mode
   wd
-  mise
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -139,14 +140,21 @@ if type brew &>/dev/null; then
   compinit
 fi
 
+export PGE_PROXY=http://webcache.comp.pge.com:8080
 function set-proxy() {
-	export https_proxy=http://webcache.comp.pge.com:8080
-	export ALL_PROXY=http://webcache.comp.pge.com:8080
+	export https_proxy=$PGE_PROXY
+	export http_proxy=$PGE_PROXY
+	export HTTPS_PROXY=$PGE_PROXY
+	export HTTP_PROXY=$PGE_PROXY
+	export ALL_PROXY=$PGE_PROXY
 	export NO_PROXY=.pge.com,.cloud.pge.com,itiamping.cloud.pge.com
 }
 
 function unset-proxy() {
+	unset http_proxy
 	unset https_proxy
+	unset HTTP_PROXY
+	unset HTTPS_PROXY
 	unset ALL_PROXY
 }
 
@@ -188,6 +196,7 @@ function awsd() {
   source _awsd $@
   # export AWS_ACCOUNT_NUMBER=$(aws sts get-caller-identity --query Account --output text 2>/dev/null)
   export AWS_ACCOUNT_NUMBER=$(aws configure get $AWS_PROFILE.aws_account_id 2>/dev/null)
+  export ENV=$(aws configure get $AWS_PROFILE.environment 2>/dev/null)
 }
 alias lmdev="awsd lmdev"
 alias lmqa="awsd lmqa"
@@ -197,6 +206,7 @@ alias lmprod="awsd lmprod"
 function set_aws(){
   export AWS_PROFILE=$(cat ~/.awsd)
   export AWS_ACCOUNT_NUMBER=$(aws configure get $AWS_PROFILE.aws_account_id 2>/dev/null)
+  export ENV=$(aws configure get $AWS_PROFILE.environment 2>/dev/null)
 
   if [ -v $AWS_ACCOUNT_NUMBER ]; then
     unset AWS_PROFILE AWS_ACCOUNT_NUMBER
@@ -221,3 +231,19 @@ eval "$(mise completion zsh)"
 eval "$(chezmoi completion zsh)"
 source <(fzf --zsh)
 complete -C '$(which aws_completer)' aws
+
+
+
+function frg {
+  result=$(rg --iglob="!node_modules" --ignore-case --color=always --line-number --no-heading "$@" |
+    fzf --ansi \
+      --color 'hl:-1:underline,hl+:-1:underline:reverse' \
+      --delimiter ':' \
+      --preview "bat --color=always {1} --highlight-line {2}" \
+      --preview-window 'up,60%,border-bottom,+{2}+3/3,~3')
+  file=${result%%:*}
+  linenumber=$(echo "${result}" | cut -d: -f2)
+  if [[ -n "$file" ]]; then
+    $EDITOR +$linenumber $file
+  fi
+}
