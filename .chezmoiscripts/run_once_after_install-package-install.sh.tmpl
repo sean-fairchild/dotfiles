@@ -1,0 +1,13 @@
+#!/bin/bash
+
+{{ if eq .chezmoi.os "darwin" -}}
+
+#!/bin/bash
+
+echo "Running brew bundle install"
+brew bundle --file "$HOME/Brewfile"
+
+echo "Running mise install"
+mise install
+
+{{ end -}}
