@@ -1,0 +1,359 @@
+prSections:
+- title: My Pull Requests
+  filters: is:open author:@me
+- title: Needs My Review
+  filters: is:open review-requested:@me
+- title: Locate
+  filters:
+    is:open
+    repo:PGEDigitalCatalyst/Locate-Web-Automation
+    repo:PGEDigitalCatalyst/LocateMark-Api
+    repo:PGEDigitalCatalyst/LocateMark-Application-Files
+    repo:PGEDigitalCatalyst/LocateMark-Archive-Service
+    repo:PGEDigitalCatalyst/LocateMark-Aurora
+    repo:PGEDigitalCatalyst/LocateMark-CICD
+    repo:PGEDigitalCatalyst/LocateMark-Couchbase-Poller
+    repo:PGEDigitalCatalyst/LocateMark-DLQ-Manager
+    repo:PGEDigitalCatalyst/LocateMark-Document-Handlers
+    repo:PGEDigitalCatalyst/LocateMark-EKS
+    repo:PGEDigitalCatalyst/LocateMark-EKS-Couchbase
+    repo:PGEDigitalCatalyst/LocateMark-EKS-Couchbase-old
+    repo:PGEDigitalCatalyst/LocateMark-EKS-NextGen
+    repo:PGEDigitalCatalyst/LocateMark-Error-Handling
+    repo:PGEDigitalCatalyst/LocateMark-GraphQL
+    repo:PGEDigitalCatalyst/LocateMark-Infra
+    repo:PGEDigitalCatalyst/LocateMark-Internal-Infra
+    repo:PGEDigitalCatalyst/LocateMark-Irth-Import
+    repo:PGEDigitalCatalyst/LocateMark-Lambda-Layer
+    repo:PGEDigitalCatalyst/LocateMark-Lambdas
+    repo:PGEDigitalCatalyst/LocateMark-Lambdas-Intake
+    repo:PGEDigitalCatalyst/LocateMark-LateTicket
+    repo:PGEDigitalCatalyst/LocateMark-Permissions-Lambda
+    repo:PGEDigitalCatalyst/LocateMark-Photo-Reporter
+    repo:PGEDigitalCatalyst/LocateMark-Poller
+    repo:PGEDigitalCatalyst/LocateMark-Positive-Response
+    repo:PGEDigitalCatalyst/LocateMark-Positive-Response-API
+    repo:PGEDigitalCatalyst/LocateMark-Scripts
+    repo:PGEDigitalCatalyst/LocateMark-Tests
+    repo:PGEDigitalCatalyst/LocateMark-Universal-Search
+    repo:PGEDigitalCatalyst/LocateMark-Universal-Search-ETL
+    repo:PGEDigitalCatalyst/LocateMark-Utilities
+    repo:PGEDigitalCatalyst/lm-infrastructure-docs
+    repo:PGEDigitalCatalyst/lm-supervisor
+    repo:PGEDigitalCatalyst/lm-terraform-skeleton
+    repo:PGEDigitalCatalyst/lm-terraform-tags
+    repo:PGEDigitalCatalyst/lm-unitization
+    repo:PGEDigitalCatalyst/locate-mark-copy-tix
+    repo:PGEDigitalCatalyst/locate-react
+- title: Engage
+  filters: |
+    is:open
+    repo:PGEDigitalCatalyst/Engage-Bulk-Assignment-Upload
+    repo:PGEDigitalCatalyst/Engage-Cron-ECS
+    repo:PGEDigitalCatalyst/Engage-Delete-Envs
+    repo:PGEDigitalCatalyst/Engage-GDLS-Scheduled-Task
+    repo:PGEDigitalCatalyst/Engage-Graph
+    repo:PGEDigitalCatalyst/Engage-Graph-Sync
+    repo:PGEDigitalCatalyst/Engage-Hooks
+    repo:PGEDigitalCatalyst/Engage-Infra
+    repo:PGEDigitalCatalyst/Engage-OTEL-testclient
+    repo:PGEDigitalCatalyst/Engage-PTT-Second-Pass-Update
+    repo:PGEDigitalCatalyst/Engage-Performance-TestAutomation
+    repo:PGEDigitalCatalyst/Engage-Queries
+    repo:PGEDigitalCatalyst/Engage-Queries-ECS
+    repo:PGEDigitalCatalyst/Engage-Scheduled-Task
+    repo:PGEDigitalCatalyst/Engage-Status-Calculations
+    repo:PGEDigitalCatalyst/Engage-Sync-Cron
+    repo:PGEDigitalCatalyst/Engage-Sync-Cron-ECS
+    repo:PGEDigitalCatalyst/Engage-Sync-Cron-Lambda
+    repo:PGEDigitalCatalyst/Engage-Sync-Status-to-GIS
+    repo:PGEDigitalCatalyst/Engage-Team-Config
+    repo:PGEDigitalCatalyst/Engage-TestAutomation
+    repo:PGEDigitalCatalyst/Engage-Visualization
+    repo:PGEDigitalCatalyst/Engage-WSG-Seed
+    repo:PGEDigitalCatalyst/Engage-Webapp
+    repo:PGEDigitalCatalyst/Engage-Workorder-AtRisk-Sync
+    repo:PGEDigitalCatalyst/Engage-Workorder-Status-GIS-Sync
+    repo:PGEDigitalCatalyst/Engage-performace-test-repo
+    repo:PGEDigitalCatalyst/Engage-v02-TestAutomation
+    repo:PGEDigitalCatalyst/Engage-v1-TestAutomation
+    repo:PGEDigitalCatalyst/EngageQueries-ECS
+    repo:PGEDigitalCatalyst/EngageTF-DB
+    repo:PGEDigitalCatalyst/Neptune-Poller
+    repo:PGEDigitalCatalyst/Neptune-Proxy
+    repo:PGEDigitalCatalyst/Web-Jenkins
+    repo:PGEDigitalCatalyst/engage-activity-report-generator
+    repo:PGEDigitalCatalyst/engage-devpipeline
+    repo:PGEDigitalCatalyst/engage-global-maps-data-enrichment
+    repo:PGEDigitalCatalyst/engage-reports-ecs
+    repo:PGEDigitalCatalyst/engage-s3web
+    repo:PGEDigitalCatalyst/engage-seed-lambda
+    repo:PGEDigitalCatalyst/neo4j-Engage-relationship-population
+    repo:PGEDigitalCatalyst/webcore-baseimages
+    repo:PGEDigitalCatalyst/webcore-infra
+    repo:PGEDigitalCatalyst/webcore-management
+    repo:PGEDigitalCatalyst/webcore-pipelines
+    repo:PGEDigitalCatalyst/webcore-testrepo
+    repo:PGEDigitalCatalyst/webcore-testweb
+    repo:PGEDigitalCatalyst/webcore-tfc-scripts
+    repo:PGEDigitalCatalyst/webcore-webapptest
+- title: PGE
+  filters: |
+    is:open
+    repo:PGEDigitalCatalyst/dca-gis-lm-pipeline
+    repo:PGEDigitalCatalyst/engage-activity-report-generator
+    repo:PGEDigitalCatalyst/Engage-Bulk-Assignment-Upload
+    repo:PGEDigitalCatalyst/Engage-Cron-ECS
+    repo:PGEDigitalCatalyst/Engage-Delete-Envs
+    repo:PGEDigitalCatalyst/engage-devpipeline
+    repo:PGEDigitalCatalyst/Engage-GDLS-Scheduled-Task
+    repo:PGEDigitalCatalyst/engage-global-maps-data-enrichment
+    repo:PGEDigitalCatalyst/Engage-Graph
+    repo:PGEDigitalCatalyst/Engage-Graph-Sync
+    repo:PGEDigitalCatalyst/Engage-Hooks
+    repo:PGEDigitalCatalyst/Engage-Infra
+    repo:PGEDigitalCatalyst/Engage-OTEL-testclient
+    repo:PGEDigitalCatalyst/Engage-performace-test-repo
+    repo:PGEDigitalCatalyst/Engage-Performance-TestAutomation
+    repo:PGEDigitalCatalyst/Engage-PTT-Second-Pass-Update
+    repo:PGEDigitalCatalyst/Engage-Queries
+    repo:PGEDigitalCatalyst/Engage-Queries-ECS
+    repo:PGEDigitalCatalyst/engage-reports-ecs
+    repo:PGEDigitalCatalyst/engage-s3web
+    repo:PGEDigitalCatalyst/Engage-Scheduled-Task
+    repo:PGEDigitalCatalyst/engage-seed-lambda
+    repo:PGEDigitalCatalyst/Engage-Status-Calculations
+    repo:PGEDigitalCatalyst/Engage-Sync-Cron
+    repo:PGEDigitalCatalyst/Engage-Sync-Cron-ECS
+    repo:PGEDigitalCatalyst/Engage-Sync-Cron-Lambda
+    repo:PGEDigitalCatalyst/Engage-Sync-Status-to-GIS
+    repo:PGEDigitalCatalyst/Engage-Team-Config
+    repo:PGEDigitalCatalyst/Engage-TestAutomation
+    repo:PGEDigitalCatalyst/Engage-v02-TestAutomation
+    repo:PGEDigitalCatalyst/Engage-v1-TestAutomation
+    repo:PGEDigitalCatalyst/Engage-Visualization
+    repo:PGEDigitalCatalyst/Engage-Webapp
+    repo:PGEDigitalCatalyst/Engage-Workorder-AtRisk-Sync
+    repo:PGEDigitalCatalyst/Engage-Workorder-Status-GIS-Sync
+    repo:PGEDigitalCatalyst/Engage-WSG-Seed
+    repo:PGEDigitalCatalyst/EngageQueries-ECS
+    repo:PGEDigitalCatalyst/EngageTF-DB
+    repo:PGEDigitalCatalyst/lm-infrastructure-docs
+    repo:PGEDigitalCatalyst/lm-supervisor
+    repo:PGEDigitalCatalyst/lm-terraform-skeleton
+    repo:PGEDigitalCatalyst/lm-terraform-tags
+    repo:PGEDigitalCatalyst/lm-unitization
+    repo:PGEDigitalCatalyst/Locate
+    repo:PGEDigitalCatalyst/locate-mark-copy-tix
+    repo:PGEDigitalCatalyst/locate-mark-training-data-utility
+    repo:PGEDigitalCatalyst/locate-react
+    repo:PGEDigitalCatalyst/Locate-Web-Automation
+    repo:PGEDigitalCatalyst/LocateAPI
+    repo:PGEDigitalCatalyst/LocateMark-Api
+    repo:PGEDigitalCatalyst/LocateMark-Application-Files
+    repo:PGEDigitalCatalyst/LocateMark-Archive-Service
+    repo:PGEDigitalCatalyst/LocateMark-Aurora
+    repo:PGEDigitalCatalyst/LocateMark-CatA-RDSDataImports
+    repo:PGEDigitalCatalyst/LocateMark-CatA-RDSImports
+    repo:PGEDigitalCatalyst/LocateMark-CICD
+    repo:PGEDigitalCatalyst/LocateMark-Couchbase-Poller
+    repo:PGEDigitalCatalyst/LocateMark-DiginRisk-Model
+    repo:PGEDigitalCatalyst/LocateMark-DLQ-Manager
+    repo:PGEDigitalCatalyst/LocateMark-Document-Handlers
+    repo:PGEDigitalCatalyst/LocateMark-Duration-Model
+    repo:PGEDigitalCatalyst/LocateMark-EKS
+    repo:PGEDigitalCatalyst/LocateMark-EKS-Couchbase
+    repo:PGEDigitalCatalyst/LocateMark-EKS-Couchbase-old
+    repo:PGEDigitalCatalyst/LocateMark-EKS-NextGen
+    repo:PGEDigitalCatalyst/LocateMark-Error-Handling
+    repo:PGEDigitalCatalyst/LocateMark-GraphQL
+    repo:PGEDigitalCatalyst/LocateMark-Infra
+    repo:PGEDigitalCatalyst/LocateMark-Internal-Infra
+    repo:PGEDigitalCatalyst/LocateMark-Irth-Import
+    repo:PGEDigitalCatalyst/LocateMark-Lambda-Layer
+    repo:PGEDigitalCatalyst/LocateMark-Lambdas
+    repo:PGEDigitalCatalyst/LocateMark-Lambdas-Intake
+    repo:PGEDigitalCatalyst/LocateMark-LateTicket
+    repo:PGEDigitalCatalyst/LocateMark-Load-Testing
+    repo:PGEDigitalCatalyst/LocateMark-Model-TrainingData
+    repo:PGEDigitalCatalyst/LocateMark-Permissions-Lambda
+    repo:PGEDigitalCatalyst/LocateMark-Photo-Reporter
+    repo:PGEDigitalCatalyst/LocateMark-pipeline-load
+    repo:PGEDigitalCatalyst/LocateMark-PMIntake-Pipeline
+    repo:PGEDigitalCatalyst/LocateMark-Poller
+    repo:PGEDigitalCatalyst/LocateMark-Positive-Response
+    repo:PGEDigitalCatalyst/LocateMark-Positive-Response-API
+    repo:PGEDigitalCatalyst/LocateMark-Scripts
+    repo:PGEDigitalCatalyst/LocateMark-Tests
+    repo:PGEDigitalCatalyst/LocateMark-tf-cloud-test
+    repo:PGEDigitalCatalyst/LocateMark-Unitization-Model
+    repo:PGEDigitalCatalyst/LocateMark-Unitization-Pipeline
+    repo:PGEDigitalCatalyst/LocateMark-Universal-Search
+    repo:PGEDigitalCatalyst/LocateMark-Universal-Search-ETL
+    repo:PGEDigitalCatalyst/LocateMark-Utilities
+    repo:PGEDigitalCatalyst/LocateMark_iOS_Automation
+    repo:PGEDigitalCatalyst/neo4j-Engage-relationship-population
+    repo:PGEDigitalCatalyst/Neptune-Poller
+    repo:PGEDigitalCatalyst/Neptune-Proxy
+    repo:PGEDigitalCatalyst/nostra-model-locatemark-duration
+    repo:PGEDigitalCatalyst/nostra-pipeline-locatemark-duration
+    repo:PGEDigitalCatalyst/proto-locate-and-mark
+    repo:PGEDigitalCatalyst/Web-Jenkins
+    repo:PGEDigitalCatalyst/webcore-baseimages
+    repo:PGEDigitalCatalyst/webcore-infra
+    repo:PGEDigitalCatalyst/webcore-management
+    repo:PGEDigitalCatalyst/webcore-pipelines
+    repo:PGEDigitalCatalyst/webcore-testrepo
+    repo:PGEDigitalCatalyst/webcore-testweb
+    repo:PGEDigitalCatalyst/webcore-tfc-scripts
+    repo:PGEDigitalCatalyst/webcore-webapptest
+- title: Involved
+  filters: is:open involves:@me -author:@me
+issuesSections:
+- title: My Issues
+  filters: is:open author:@me
+- title: Assigned
+  filters: is:open assignee:@me
+- title: Involved
+  filters: is:open involves:@me -author:@me
+defaults:
+  preview:
+    open: true
+    width: 50
+  prsLimit: 20
+  issuesLimit: 20
+  view: prs
+  layout:
+    prs:
+      updatedAt:
+        width: 7
+      repo:
+        width: 15
+      author:
+        width: 15
+      assignees:
+        width: 20
+        hidden: true
+      base:
+        width: 15
+        hidden: true
+      lines:
+        width: 16
+    issues:
+      updatedAt:
+        width: 7
+      repo:
+        width: 15
+      creator:
+        width: 10
+      assignees:
+        width: 20
+        hidden: true
+  refetchIntervalMinutes: 30
+keybindings:
+  prs:
+    - key: c
+      command: >
+        tmux new-window -c {{.RepoPath}} '
+          gh pr checkout {{.PrNumber}} &&
+          nvim -c ":DiffviewOpen master...{{.HeadRefName}}"
+        '
+  issues: []
+repoPaths:
+  :owner/:repo:                                                                                ~/src/github/:owner/:repo
+  PGEDigitalCatalyst/engage-activity-report-generator:     ~/src/github/pge/Engage/engage-activity-report-generator     
+  PGEDigitalCatalyst/Engage-Bulk-Assignment-Upload:        ~/src/github/pge/Engage/Engage-Bulk-Assignment-Upload        
+  PGEDigitalCatalyst/Engage-Cron-ECS:                      ~/src/github/pge/Engage/Engage-Cron-ECS                      
+  PGEDigitalCatalyst/Engage-Delete-Envs:                   ~/src/github/pge/Engage/Engage-Delete-Envs                   
+  PGEDigitalCatalyst/engage-devpipeline:                   ~/src/github/pge/Engage/engage-devpipeline                   
+  PGEDigitalCatalyst/Engage-GDLS-Scheduled-Task:           ~/src/github/pge/Engage/Engage-GDLS-Scheduled-Task           
+  PGEDigitalCatalyst/engage-global-maps-data-enrichment:   ~/src/github/pge/Engage/engage-global-maps-data-enrichment   
+  PGEDigitalCatalyst/Engage-Graph-Sync:                    ~/src/github/pge/Engage/Engage-Graph-Sync                    
+  PGEDigitalCatalyst/Engage-Graph:                         ~/src/github/pge/Engage/Engage-Graph                         
+  PGEDigitalCatalyst/Engage-Hooks:                         ~/src/github/pge/Engage/Engage-Hooks                         
+  PGEDigitalCatalyst/Engage-Infra:                         ~/src/github/pge/Engage/Engage-Infra                         
+  PGEDigitalCatalyst/Engage-OTEL-testclient:               ~/src/github/pge/Engage/Engage-OTEL-testclient               
+  PGEDigitalCatalyst/Engage-performace-test-repo:          ~/src/github/pge/Engage/Engage-performace-test-repo          
+  PGEDigitalCatalyst/Engage-Performance-TestAutomation:    ~/src/github/pge/Engage/Engage-Performance-TestAutomation    
+  PGEDigitalCatalyst/Engage-PTT-Second-Pass-Update:        ~/src/github/pge/Engage/Engage-PTT-Second-Pass-Update        
+  PGEDigitalCatalyst/Engage-Queries-ECS:                   ~/src/github/pge/Engage/Engage-Queries-ECS                   
+  PGEDigitalCatalyst/Engage-Queries:                       ~/src/github/pge/Engage/Engage-Queries                       
+  PGEDigitalCatalyst/engage-reports-ecs:                   ~/src/github/pge/Engage/engage-reports-ecs                   
+  PGEDigitalCatalyst/engage-s3web:                         ~/src/github/pge/Engage/engage-s3web                         
+  PGEDigitalCatalyst/Engage-Scheduled-Task:                ~/src/github/pge/Engage/Engage-Scheduled-Task                
+  PGEDigitalCatalyst/engage-seed-lambda:                   ~/src/github/pge/Engage/engage-seed-lambda                   
+  PGEDigitalCatalyst/Engage-Status-Calculations:           ~/src/github/pge/Engage/Engage-Status-Calculations           
+  PGEDigitalCatalyst/Engage-Sync-Cron-ECS:                 ~/src/github/pge/Engage/Engage-Sync-Cron-ECS                 
+  PGEDigitalCatalyst/Engage-Sync-Cron-Lambda:              ~/src/github/pge/Engage/Engage-Sync-Cron-Lambda              
+  PGEDigitalCatalyst/Engage-Sync-Cron:                     ~/src/github/pge/Engage/Engage-Sync-Cron                     
+  PGEDigitalCatalyst/Engage-Sync-Status-to-GIS:            ~/src/github/pge/Engage/Engage-Sync-Status-to-GIS            
+  PGEDigitalCatalyst/Engage-Team-Config:                   ~/src/github/pge/Engage/Engage-Team-Config                   
+  PGEDigitalCatalyst/Engage-TestAutomation:                ~/src/github/pge/Engage/Engage-TestAutomation                
+  PGEDigitalCatalyst/Engage-v02-TestAutomation:            ~/src/github/pge/Engage/Engage-v02-TestAutomation            
+  PGEDigitalCatalyst/Engage-v1-TestAutomation:             ~/src/github/pge/Engage/Engage-v1-TestAutomation             
+  PGEDigitalCatalyst/Engage-Visualization:                 ~/src/github/pge/Engage/Engage-Visualization                 
+  PGEDigitalCatalyst/Engage-Webapp:                        ~/src/github/pge/Engage/Engage-Webapp                        
+  PGEDigitalCatalyst/Engage-Workorder-AtRisk-Sync:         ~/src/github/pge/Engage/Engage-Workorder-AtRisk-Sync         
+  PGEDigitalCatalyst/Engage-Workorder-Status-GIS-Sync:     ~/src/github/pge/Engage/Engage-Workorder-Status-GIS-Sync     
+  PGEDigitalCatalyst/Engage-WSG-Seed:                      ~/src/github/pge/Engage/Engage-WSG-Seed                      
+  PGEDigitalCatalyst/EngageQueries-ECS:                    ~/src/github/pge/Engage/EngageQueries-ECS                    
+  PGEDigitalCatalyst/EngageTF-DB:                          ~/src/github/pge/Engage/EngageTF-DB                          
+  PGEDigitalCatalyst/lm-infrastructure-docs:               ~/src/github/pge/Locate/lm-infrastructure-docs           
+  PGEDigitalCatalyst/lm-supervisor:                        ~/src/github/pge/Locate/lm-supervisor                    
+  PGEDigitalCatalyst/lm-terraform-skeleton:                ~/src/github/pge/Locate/lm-terraform-skeleton            
+  PGEDigitalCatalyst/lm-terraform-tags:                    ~/src/github/pge/Locate/lm-terraform-tags                
+  PGEDigitalCatalyst/lm-unitization:                       ~/src/github/pge/Locate/lm-unitization                   
+  PGEDigitalCatalyst/locate-mark-copy-tix:                 ~/src/github/pge/Locate/locate-mark-copy-tix             
+  PGEDigitalCatalyst/locate-react:                         ~/src/github/pge/Locate/locate-react                     
+  PGEDigitalCatalyst/Locate-Web-Automation:                ~/src/github/pge/Locate/Locate-Web-Automation            
+  PGEDigitalCatalyst/LocateMark-Api:                       ~/src/github/pge/Locate/LocateMark-Api                   
+  PGEDigitalCatalyst/LocateMark-Application-Files:         ~/src/github/pge/Locate/LocateMark-Application-Files     
+  PGEDigitalCatalyst/LocateMark-Archive-Service:           ~/src/github/pge/Locate/LocateMark-Archive-Service       
+  PGEDigitalCatalyst/LocateMark-Aurora:                    ~/src/github/pge/Locate/LocateMark-Aurora                
+  PGEDigitalCatalyst/LocateMark-CICD:                      ~/src/github/pge/Locate/LocateMark-CICD                  
+  PGEDigitalCatalyst/LocateMark-Couchbase-Poller:          ~/src/github/pge/Locate/LocateMark-Couchbase-Poller      
+  PGEDigitalCatalyst/LocateMark-DLQ-Manager:               ~/src/github/pge/Locate/LocateMark-DLQ-Manager           
+  PGEDigitalCatalyst/LocateMark-Document-Handlers:         ~/src/github/pge/Locate/LocateMark-Document-Handlers     
+  PGEDigitalCatalyst/LocateMark-EKS-Couchbase-old:         ~/src/github/pge/Locate/LocateMark-EKS-Couchbase-old     
+  PGEDigitalCatalyst/LocateMark-EKS-Couchbase:             ~/src/github/pge/Locate/LocateMark-EKS-Couchbase         
+  PGEDigitalCatalyst/LocateMark-EKS-NextGen:               ~/src/github/pge/Locate/LocateMark-EKS-NextGen           
+  PGEDigitalCatalyst/LocateMark-EKS:                       ~/src/github/pge/Locate/LocateMark-EKS                   
+  PGEDigitalCatalyst/LocateMark-Error-Handling:            ~/src/github/pge/Locate/LocateMark-Error-Handling        
+  PGEDigitalCatalyst/LocateMark-GraphQL:                   ~/src/github/pge/Locate/LocateMark-GraphQL               
+  PGEDigitalCatalyst/LocateMark-Infra:                     ~/src/github/pge/Locate/LocateMark-Infra                 
+  PGEDigitalCatalyst/LocateMark-Internal-Infra:            ~/src/github/pge/Locate/LocateMark-Internal-Infra        
+  PGEDigitalCatalyst/LocateMark-Irth-Import:               ~/src/github/pge/Locate/LocateMark-Irth-Import           
+  PGEDigitalCatalyst/LocateMark-Lambda-Layer:              ~/src/github/pge/Locate/LocateMark-Lambda-Layer          
+  PGEDigitalCatalyst/LocateMark-Lambdas-Intake:            ~/src/github/pge/Locate/LocateMark-Lambdas-Intake        
+  PGEDigitalCatalyst/LocateMark-Lambdas:                   ~/src/github/pge/Locate/LocateMark-Lambdas               
+  PGEDigitalCatalyst/LocateMark-LateTicket:                ~/src/github/pge/Locate/LocateMark-LateTicket            
+  PGEDigitalCatalyst/LocateMark-Permissions-Lambda:        ~/src/github/pge/Locate/LocateMark-Permissions-Lambda    
+  PGEDigitalCatalyst/LocateMark-Photo-Reporter:            ~/src/github/pge/Locate/LocateMark-Photo-Reporter        
+  PGEDigitalCatalyst/LocateMark-Poller:                    ~/src/github/pge/Locate/LocateMark-Poller                
+  PGEDigitalCatalyst/LocateMark-Positive-Response-API:     ~/src/github/pge/Locate/LocateMark-Positive-Response-API 
+  PGEDigitalCatalyst/LocateMark-Positive-Response:         ~/src/github/pge/Locate/LocateMark-Positive-Response     
+  PGEDigitalCatalyst/LocateMark-Scripts:                   ~/src/github/pge/Locate/LocateMark-Scripts               
+  PGEDigitalCatalyst/LocateMark-Tests:                     ~/src/github/pge/Locate/LocateMark-Tests                 
+  PGEDigitalCatalyst/LocateMark-Universal-Search-ETL:      ~/src/github/pge/Locate/LocateMark-Universal-Search-ETL  
+  PGEDigitalCatalyst/LocateMark-Universal-Search:          ~/src/github/pge/Locate/LocateMark-Universal-Search      
+  PGEDigitalCatalyst/LocateMark-Utilities:                 ~/src/github/pge/Locate/LocateMark-Utilities             
+  PGEDigitalCatalyst/neo4j-Engage-relationship-population: ~/src/github/pge/Engage/neo4j-Engage-relationship-population 
+  PGEDigitalCatalyst/Neptune-Poller:                       ~/src/github/pge/Engage/Neptune-Poller                       
+  PGEDigitalCatalyst/Neptune-Proxy:                        ~/src/github/pge/Engage/Neptune-Proxy                        
+  PGEDigitalCatalyst/Web-Jenkins:                          ~/src/github/pge/Engage/Web-Jenkins                          
+  PGEDigitalCatalyst/webcore-baseimages:                   ~/src/github/pge/Engage/webcore-baseimages                   
+  PGEDigitalCatalyst/webcore-infra:                        ~/src/github/pge/Engage/webcore-infra                        
+  PGEDigitalCatalyst/webcore-management:                   ~/src/github/pge/Engage/webcore-management                   
+  PGEDigitalCatalyst/webcore-pipelines:                    ~/src/github/pge/Engage/webcore-pipelines                    
+  PGEDigitalCatalyst/webcore-testrepo:                     ~/src/github/pge/Engage/webcore-testrepo                     
+  PGEDigitalCatalyst/webcore-testweb:                      ~/src/github/pge/Engage/webcore-testweb                      
+  PGEDigitalCatalyst/webcore-tfc-scripts:                  ~/src/github/pge/Engage/webcore-tfc-scripts                  
+  PGEDigitalCatalyst/webcore-webapptest:                   ~/src/github/pge/Engage/webcore-webapptest                   
+theme:
+  ui:
+    table:
+      showSeparator: true
+pager:
+  diff: ""
+confirmQuit: false
+

@@ -1,0 +1,4 @@
+[[snippets]]
+  description = "list and change to directory"
+  command = "ls <path> && cd <path>"
+  output = ""
