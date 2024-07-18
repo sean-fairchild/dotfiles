@@ -1,0 +1,101 @@
+[profile lmdev]
+role_arn = arn:aws:iam::532556717184:role/LMAdmin
+source_profile = AWS-A2102-All-MRADAdmin@739846873405
+region = us-west-2
+ca_bundle = /Users/S3FF/.aws/pge-aws-cert-bundle.pem
+role_session_name = S3FF
+cli_pager = "jq"
+aws_account_id = 532556717184
+environment = dev
+
+[profile lmqa]
+role_arn = arn:aws:iam::973954514056:role/LMAdmin
+source_profile = AWS-A2102-All-MRADAdmin@739846873405
+region = us-west-2
+ca_bundle = /Users/S3FF/.aws/pge-aws-cert-bundle.pem
+role_session_name = S3FF
+cli_pager = "jq"
+aws_account_id = 973954514056
+environment = qa
+
+[profile lmprod]
+role_arn = arn:aws:iam::087432829056:role/LMAdmin
+source_profile = AWS-A2102-All-MRADAdmin@739846873405
+region = us-west-2
+ca_bundle = /Users/S3FF/.aws/pge-aws-cert-bundle.pem
+role_session_name = S3FF
+cli_pager = "jq"
+aws_account_id = 087432829056
+environment = prod
+
+[profile mraddev]
+role_arn = arn:aws:iam::990878119577:role/MRAD_Ops
+source_profile = AWS-A1795-Dev-MRAD_Ops@739846873405
+region = us-west-2
+ca_bundle = /Users/S3FF/.aws/pge-aws-cert-bundle.pem
+role_session_name = S3FF
+cli_pager = "jq"
+aws_account_id = 990878119577
+
+[profile mradtest]
+role_arn = arn:aws:iam::991535610078:role/MRAD_Ops
+source_profile = AWS-A1795-Test-MRAD_Ops@739846873405
+region = us-west-2
+ca_bundle = /Users/S3FF/.aws/pge-aws-cert-bundle.pem
+role_session_name = S3FF
+cli_pager = "jq"
+aws_account_id = 991535610078
+
+[profile mradqa]
+role_arn = arn:aws:iam::471817339124:role/MRAD_Ops
+source_profile = AWS-A1795-QA-MRAD_Ops@739846873405
+region = us-west-2
+ca_bundle = /Users/S3FF/.aws/pge-aws-cert-bundle.pem
+role_session_name = S3FF
+cli_pager = "jq"
+aws_account_id = 471817339124
+
+[profile mrad_dev_legacy]
+role_arn = arn:aws:iam::137059125995:role/MRAD_Ops
+source_profile = AWS-A1795-Non-Prod-MRAD_Ops@739846873405
+region = us-west-2
+ca_bundle = /Users/S3FF/.aws/pge-aws-cert-bundle.pem
+role_session_name = S3FF
+cli_pager = "jq"
+aws_account_id = 137059125995
+
+[profile mradprod]
+role_arn = arn:aws:iam::712640766496:role/MRAD_Ops
+source_profile = AWS-A1795-Prod-MRAD_Ops@739846873405
+region = us-west-2
+ca_bundle = /Users/S3FF/.aws/pge-aws-cert-bundle.pem
+role_session_name = S3FF
+cli_pager = "jq"
+aws_account_id = 712640766496
+
+[profile psps_dev]
+role_arn = arn:aws:iam::740871259156:role/PSPSPlanningViewer_Ops
+source_profile = AWS-A3008-Dev-PSPSPlanningViewer_Ops@739846873405
+region = us-west-2
+ca_bundle = /Users/S3FF/.aws/pge-aws-cert-bundle.pem
+role_session_name = S3FF
+cli_pager = "jq"
+aws_account_id = 740871259156
+
+[profile arad]
+role_arn = arn:aws:iam::925741509387:role/ARAD_Data_Engineer
+source_profile = AWS-A2510-All-Locate_Mark_Data_Engineer@739846873405
+region = us-west-2
+ca_bundle = /Users/S3FF/.aws/pge-aws-cert-bundle.pem
+role_session_name = S3FF
+cli_pager = "jq"
+aws_account_id = 925741509387
+
+[profile internal_lmdev]
+role_arn = arn:aws:iam::265171113329:role/LM_Ops
+source_profile = AWS-A2510-Dev-LM_Ops@739846873405
+region = us-west-2
+ca_bundle = /Users/S3FF/.aws/pge-aws-cert-bundle.pem
+role_session_name = S3FF
+cli_pager = "jq"
+aws_account_id = 265171113329
