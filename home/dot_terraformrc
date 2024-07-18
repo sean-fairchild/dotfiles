@@ -1,0 +1,8 @@
+plugin_cache_dir   = "$HOME/.terraform.d/plugin-cache"
+
+host "mrad.terraform" {
+  services = {
+    "modules.v1" = "https://bhs84ldqo1-vpce-0e24dbb4ba103df1a.execute-api.us-west-2.amazonaws.com/live/modules.v1/"
+  }
+}
+
