@@ -1,0 +1,3 @@
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+complete -C /Users/S3FF/.asdf/installs/terraform/0.12.24/bin/terraform terraform
