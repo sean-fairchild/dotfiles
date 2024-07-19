@@ -1,7 +1,5 @@
 tap "hashicorp/tap"
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
 tap "homebrew/services"
 tap "jason0x43/neovim-nightly"
 tap "jesseduffield/lazygit"
