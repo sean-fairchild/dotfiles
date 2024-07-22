@@ -247,3 +247,4 @@ function frg {
     $EDITOR +$linenumber $file
   fi
 }
+eval "$(atuin init zsh)"
