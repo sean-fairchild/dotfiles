@@ -2,5 +2,4 @@ github.com:
     git_protocol: ssh
     users:
         sean-fairchild:
-        sfairchild:
-    user: sfairchild
+    user: sean-fairchild

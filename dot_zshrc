@@ -247,4 +247,6 @@ function frg {
     $EDITOR +$linenumber $file
   fi
 }
+
+export GPG_TTY=$(tty)
 eval "$(atuin init zsh)"
