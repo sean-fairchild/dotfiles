@@ -90,7 +90,6 @@ plugins=(
   rust
   terraform
   vi-mode
-  wd
   zsh-autosuggestions
 )
 
