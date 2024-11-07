@@ -1,3 +1,5 @@
+return { 'SidOfc/carbon.nvim' }
+
 return {
   "stevearc/oil.nvim",
   opts = {},
