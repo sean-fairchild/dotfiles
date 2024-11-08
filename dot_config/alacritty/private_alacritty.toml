@@ -1,5 +1,5 @@
 
-[shell]
+[terminal.shell]
 args = ['--login']
 program = "/bin/zsh"
 
@@ -44,3 +44,5 @@ y = 0
 [colors.cursor]
 text = "CellBackground"
 cursor = "CellForeground"
+
+[terminal]
