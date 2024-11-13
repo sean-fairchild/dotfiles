@@ -3,6 +3,9 @@
 args = ['--login']
 program = "/bin/zsh"
 
+[shell]
+program /usr
+
 [cursor]
 style = "Beam"
 
