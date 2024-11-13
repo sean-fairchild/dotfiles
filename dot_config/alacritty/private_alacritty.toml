@@ -4,7 +4,8 @@ args = ['--login']
 program = "/bin/zsh"
 
 [shell]
-program /usr
+program /opt/homebrew/bin/tmux
+
 
 [cursor]
 style = "Beam"
