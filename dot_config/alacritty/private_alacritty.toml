@@ -3,10 +3,6 @@
 args = ['--login']
 program = "/bin/zsh"
 
-[shell]
-program /opt/homebrew/bin/tmux
-
-
 [cursor]
 style = "Beam"
 
@@ -18,8 +14,6 @@ family = "FiraCode Nerd Font Mono"
 style = "Regular"
 
 [window]
-title = "Alacritty"
-dynamic_title: false
 option_as_alt = "Both"
 startup_mode = "Windowed"
 dynamic_padding = true
