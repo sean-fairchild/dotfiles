@@ -247,5 +247,6 @@ function frg {
   fi
 }
 
+export GH_TOKEN=$(gh auth token)
 export GPG_TTY=$(tty)
 eval "$(atuin init zsh)"
