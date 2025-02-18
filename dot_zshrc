@@ -206,6 +206,7 @@ function set_aws(){
   export AWS_PROFILE=$(cat ~/.awsd)
   export AWS_ACCOUNT_NUMBER=$(aws configure get $AWS_PROFILE.aws_account_id 2>/dev/null)
   export ENV=$(aws configure get $AWS_PROFILE.environment 2>/dev/null)
+  export AWS_REGION=$(aws configure get $AWS_PROFILE.region)
 
   if [ -v $AWS_ACCOUNT_NUMBER ]; then
     unset AWS_PROFILE AWS_ACCOUNT_NUMBER
