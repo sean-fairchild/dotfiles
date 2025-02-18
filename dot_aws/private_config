@@ -91,6 +91,17 @@ role_session_name = S3FF
 cli_pager = "jq"
 aws_account_id = 925741509387
 
+[profile internal_lmdev_admin]
+role_arn = arn:aws:iam::265171113329:role/LM_Admin
+source_profile = AWS-A2510-Dev-LM_Admin@739846873405
+region = us-west-2
+ca_bundle = /Users/S3FF/.aws/pge-aws-cert-bundle.pem
+role_session_name = S3FF
+cli_pager = "jq"
+aws_account_id = 265171113329
+environment = dev
+
+
 [profile internal_lmdev]
 role_arn = arn:aws:iam::265171113329:role/LM_Ops
 source_profile = AWS-A2510-Dev-LM_Ops@739846873405
@@ -99,3 +110,4 @@ ca_bundle = /Users/S3FF/.aws/pge-aws-cert-bundle.pem
 role_session_name = S3FF
 cli_pager = "jq"
 aws_account_id = 265171113329
+environment = dev
