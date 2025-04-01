@@ -1,4 +1,4 @@
-return {
-  "CopilotC-Nvim/CopilotChat.nvim",
-  lazy = false,
-}
+-- return {
+--   "CopilotC-Nvim/CopilotChat.nvim",
+--   lazy = false,
+-- }
