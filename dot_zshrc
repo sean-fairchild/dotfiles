@@ -189,6 +189,8 @@ eval "$(op completion zsh)"; compdef _op op
 
 eval "$(zoxide init zsh)"
 
+source <(COMPLETE=zsh jj)
+
 # source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
 
 function awsd() {
