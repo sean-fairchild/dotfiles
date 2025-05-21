@@ -185,11 +185,6 @@ function awsd() {
   export AWS_ACCOUNT_NUMBER=$(aws configure get $AWS_PROFILE.aws_account_id 2>/dev/null)
   export ENV=$(aws configure get $AWS_PROFILE.environment 2>/dev/null)
 }
-alias lmdev="awsd lmdev"
-alias lmdev_new="awsd internal_lmdev"
-alias lmqa="awsd lmqa"
-alias lmprod="awsd lmprod"
-
 
 function set_aws(){
   export AWS_PROFILE=$(cat ~/.awsd)

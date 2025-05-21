@@ -17,3 +17,11 @@ alias kx=kubectx
 # JJ aliases
 
 alias jjf="jj git fetch"
+alias jjs="jj st"
+
+# AWSD
+alias lmdev="awsd lmdev"
+alias lmdev_new="awsd internal_lmdev"
+alias lmqa="awsd lmqa"
+alias lmprod="awsd lmprod"
+
