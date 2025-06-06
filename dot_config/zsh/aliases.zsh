@@ -18,6 +18,7 @@ alias kx=kubectx
 
 alias jjf="jj git fetch"
 alias jjs="jj st"
+alias jjn="jj git fetch && jj new 'trunk()'"
 
 # AWSD
 alias lmdev="awsd lmdev"
