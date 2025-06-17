@@ -148,6 +148,13 @@ prompt_git() {
   fi
 }
 
+my_theme_vcs_info() {
+  jj_prompt_template 'self.change_id().shortest(3)' \
+  || prompt_git
+}
+
+# PROMPT='$(_my_theme_vcs_info) $'
+
 # prompt_bzr() {
 #     (( $+commands[bzr] )) || return
 #     if (bzr status >/dev/null 2>&1); then
@@ -269,7 +276,8 @@ build_prompt() {
   prompt_context
   # prompt_user_at_host
   prompt_dir
-  prompt_git
+  my_theme_vcs_info
+  # prompt_git
   prompt_aws_user
   prompt_k8s_context
   # prompt_bzr
