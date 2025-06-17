@@ -148,9 +148,32 @@ prompt_git() {
   fi
 }
 
+prompt_jj() {
+  change_id=$(jj_prompt_template 'self.change_id().shortest(3)')
+  prompt_segment 3 0
+  echo -n $(jj log --ignore-working-copy --no-graph --color always -r @ -T '
+        stringify(separate(
+                " ",
+                "JJ:",
+                bookmarks.join(", "),
+                change_id.shortest(),
+                " | ",
+                commit_id.shortest(),
+                if(conflict, "(conflict)"),
+                if(empty, "(empty)"),
+                if(divergent, "(divergent)"),
+                if(hidden, "(hidden)"),
+            )
+            )
+        ')
+}
+
 my_theme_vcs_info() {
-  jj_prompt_template 'self.change_id().shortest(3)' \
-  || prompt_git
+  if $(jj --ignore-working-copy >/dev/null 2>&1); then
+    prompt_jj
+  else
+    prompt_git
+  fi
 }
 
 # PROMPT='$(_my_theme_vcs_info) $'
