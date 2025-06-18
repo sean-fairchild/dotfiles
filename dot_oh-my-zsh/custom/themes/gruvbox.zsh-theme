@@ -150,22 +150,30 @@ prompt_git() {
 
 prompt_jj() {
   change_id=$(jj_prompt_template 'self.change_id().shortest(3)')
-  prompt_segment 3 0
-  echo -n $(jj log --ignore-working-copy --no-graph --color always -r @ -T '
+
+if ($(jj show @ -T 'self.empty()' --no-patch) -eq 'true'); then
+  segment_color=10
+else
+  segment_color=166
+fi
+
+ 
+  prompt_segment $segment_color 0
+  echo -n $(jj log --ignore-working-copy --no-graph --color always -r @ -T "
         stringify(separate(
-                " ",
-                "JJ:",
-                bookmarks.join(", "),
+                ' ',
+                'JJ:',
+                bookmarks.join(', '),
                 change_id.shortest(),
-                " | ",
+                ' | ',
                 commit_id.shortest(),
-                if(conflict, "(conflict)"),
-                if(empty, "(empty)"),
-                if(divergent, "(divergent)"),
-                if(hidden, "(hidden)"),
+                if(conflict, '(conflict)'),
+                if(empty, '(empty)'),
+                if(divergent, '(divergent)'),
+                if(hidden, '(hidden)'),
             )
             )
-        ')
+        ")
 }
 
 my_theme_vcs_info() {
@@ -256,10 +264,8 @@ prompt_virtualenv() {
 }
 
 newline_prompt() {
-  echo -n "\n"
   prompt_segment 166 0 "$"
-  prompt_segment
-  # echo -n "%{%f%k%}"
+  prompt_end
 }
 
 # Status:
@@ -278,7 +284,7 @@ prompt_status() {
 
 prompt_aws_user() {
   if [[ -n $AWS_PROFILE ]]; then
-    prompt_color=111
+    prompt_color=109
     prompt_segment $prompt_color 0 "$AWS_PROFILE - $AWS_ACCOUNT_NUMBER"
   fi
 }
@@ -290,6 +296,12 @@ prompt_k8s_context() {
   fi
 }
 
+prompt_newline() {
+  prompt_end
+  CURRENT_BG='NONE'
+  echo -n "\n"
+}
+
 ## Main prompt
 build_prompt() {
   RETVAL=$?
@@ -299,13 +311,14 @@ build_prompt() {
   prompt_context
   # prompt_user_at_host
   prompt_dir
+  prompt_newline
   my_theme_vcs_info
-  # prompt_git
+  prompt_newline
   prompt_aws_user
   prompt_k8s_context
   # prompt_bzr
   # prompt_hg
-  prompt_end
+  prompt_newline
   newline_prompt
 }
 
