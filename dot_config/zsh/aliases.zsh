@@ -22,7 +22,8 @@ alias jjn="jj git fetch && jj new 'trunk()'"
 
 # AWSD
 alias lmdev="awsd lmdev"
-alias lmdev_new="awsd internal_lmdev"
+alias lmdev_new="awsd lmdev_new"
+alias lmdev_admin_new="awsd lmdev_admin_new"
 alias lmqa="awsd lmqa"
 alias lmprod="awsd lmprod"
 
