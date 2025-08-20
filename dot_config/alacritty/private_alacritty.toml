@@ -37,8 +37,8 @@ y = 0
 # cyan = "#8be9fd"
 # white = "#f8f8f2"
 #
-# [colors.primary]
-# background = "#282a36"
+[colors.primary]
+background = "#282828"
 # foreground = "#f8f8f2"
 
 [colors.cursor]
