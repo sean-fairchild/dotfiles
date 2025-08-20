@@ -83,7 +83,7 @@ cli_pager = "jq"
 aws_account_id = 740871259156
 
 [profile arad]
-role_arn = arn:aws:iam::925741509387:role/ARAD_Data_Engineer
+role_arn = arn:aws:iam::925741509387:role/Locate_Mark_Data_Engineer
 source_profile = AWS-A2510-All-Locate_Mark_Data_Engineer@739846873405
 region = us-west-2
 ca_bundle = /Users/S3FF/.aws/pge-aws-cert-bundle.pem
@@ -101,7 +101,6 @@ cli_pager = "jq"
 aws_account_id = 265171113329
 environment = dev
 
-
 [profile lmdev_new]
 role_arn = arn:aws:iam::265171113329:role/LM_Ops
 source_profile = AWS-A2510-Dev-LM_Ops@739846873405
@@ -111,3 +110,24 @@ role_session_name = S3FF
 cli_pager = "jq"
 aws_account_id = 265171113329
 environment = dev
+
+[profile lmqa_new]
+role_arn = arn:aws:iam::207567762899:role/LM_Ops
+source_profile = AWS-A2510-QA-LM_Ops@739846873405
+region = us-west-2
+ca_bundle = /Users/S3FF/.aws/pge-aws-cert-bundle.pem
+role_session_name = S3FF
+cli_pager = "jq"
+aws_account_id = 207567762899
+environment = qa
+
+[profile lmprod_new]
+role_arn = arn:aws:iam::944747578688:role/LM_Ops
+source_profile = AWS-A2510-Prod-LM_Ops@739846873405
+region = us-west-2
+ca_bundle = /Users/S3FF/.aws/pge-aws-cert-bundle.pem
+role_session_name = S3FF
+cli_pager = "jq"
+aws_account_id = 944747578688
+environment = prod
+
