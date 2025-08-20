@@ -104,6 +104,7 @@ prompt_git() {
   if [[ "$(git config --get oh-my-zsh.hide-status 2>/dev/null)" = 1 ]]; then
     return
   fi
+  prompt_newline
   local PL_BRANCH_CHAR
   () {
     local LC_ALL="" LC_CTYPE="en_US.UTF-8"
@@ -151,33 +152,39 @@ prompt_git() {
 prompt_jj() {
   change_id=$(jj_prompt_template 'self.change_id().shortest(3)')
 
-if ($(jj show @ -T 'self.empty()' --no-patch) -eq 'true'); then
-  segment_color=10
-else
-  segment_color=166
-fi
-
+  if ($(jj show @ -T 'self.conflict()' --no-patch) -eq 'true'); then
+    segment_color=1
+  elif ($(jj show @ -T 'self.divergent()' --no-patch) -eq 'true'); then
+    segment_color=166
+  elif ($(jj show @ -T 'self.hidden()' --no-patch) -eq 'true'); then
+    segment_color=7
+  elif ($(jj show @ -T 'self.empty()' --no-patch) -eq 'true'); then
+    segment_color=10
+  else
+    segment_color=3
+  fi
  
   prompt_segment $segment_color 0
   echo -n $(jj log --ignore-working-copy --no-graph --color always -r @ -T "
         stringify(separate(
-                ' ',
-                'JJ:',
-                bookmarks.join(', '),
-                change_id.shortest(),
-                ' | ',
-                commit_id.shortest(),
-                if(conflict, '(conflict)'),
-                if(empty, '(empty)'),
-                if(divergent, '(divergent)'),
-                if(hidden, '(hidden)'),
-            )
-            )
+          ' ',
+          'JJ:',
+          bookmarks.join(', '),
+          change_id.shortest(),
+          '|',
+          commit_id.shortest(),
+          if(conflict, '(conflict)'),
+          if(empty, '(empty)'),
+          if(divergent, '(divergent)'),
+          if(hidden, '(hidden)'),
+          if(description, '\"' ++ truncate_end(90, description.trim(), '...') ++ '\"', '(No Description)')
+        ))
         ")
 }
 
-my_theme_vcs_info() {
+prompt_vcs_info() {
   if $(jj --ignore-working-copy >/dev/null 2>&1); then
+    prompt_newline
     prompt_jj
   else
     prompt_git
@@ -246,7 +253,7 @@ my_theme_vcs_info() {
 
 prompt_user_at_host() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment 4 $CURRENT_FG "%(!.%{%F{3}%}.)%n@%m"
+    prompt_segment 12 $CURRENT_FG "%(!.%{%F{3}%}.)%n@%m"
   fi
 }
 
@@ -264,7 +271,7 @@ prompt_virtualenv() {
 }
 
 newline_prompt() {
-  prompt_segment 166 0 "$"
+  prompt_segment 208 0 "$"
   prompt_end
 }
 
@@ -284,8 +291,8 @@ prompt_status() {
 
 prompt_aws_user() {
   if [[ -n $AWS_PROFILE ]]; then
-    prompt_color=109
-    prompt_segment $prompt_color 0 "$AWS_PROFILE - $AWS_ACCOUNT_NUMBER"
+    prompt_color=6
+    prompt_segment $prompt_color $CURRENT_FG "$AWS_PROFILE - $AWS_ACCOUNT_NUMBER"
   fi
 }
 
@@ -309,13 +316,11 @@ build_prompt() {
   prompt_status
   prompt_virtualenv
   prompt_context
-  # prompt_user_at_host
+  prompt_user_at_host
   prompt_dir
-  prompt_newline
-  my_theme_vcs_info
-  prompt_newline
   prompt_aws_user
   prompt_k8s_context
+  prompt_vcs_info
   # prompt_bzr
   # prompt_hg
   prompt_newline
