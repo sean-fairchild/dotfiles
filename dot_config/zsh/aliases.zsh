@@ -25,5 +25,7 @@ alias lmdev="awsd lmdev"
 alias lmdev_new="awsd lmdev_new"
 alias lmdev_admin_new="awsd lmdev_admin_new"
 alias lmqa="awsd lmqa"
+alias lmqa_new="awsd lmqa_new"
 alias lmprod="awsd lmprod"
+alias lmprod_new="awsd lmprod_new"
 
